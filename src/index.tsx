@@ -1,5 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import Home from './Home';
+import '../src/i18n/i18n';
 
 const container = document.getElementById('app-root')!;
 const root = createRoot(container);
@@ -7,8 +9,7 @@ const root = createRoot(container);
 root.render(
     <React.StrictMode>
         <div>
-            <h1>Hey we finally get there!</h1>
-            <h3>That&quot;s the beauty of this.</h3>
+           <Home/>
         </div>
     </React.StrictMode>
 );
